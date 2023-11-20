@@ -1,0 +1,38 @@
+Documentation:
+Finite Automaton Program
+The Finite Automaton (FA) program is a C++ implementation that reads the elements of a Finite Automaton (FA) from a file, displays its components, and verifies if a sequence is accepted by the FA.
+
+Program Components:
+FiniteAutomaton Class:
+
+Represents the FA with states, alphabet, transitions, initial state, and final states.
+Provides functions to read FA elements from a file, display FA elements, and check if a sequence is accepted.
+Main Program:
+
+Reads the FA from the file "FA.in".
+Displays the set of states, alphabet, transitions, initial state, and final states.
+Prompts the user to enter a sequence and checks if it is accepted by the DFA.
+How to Use:
+Create an input file "FA.in" following the format described below.
+Compile and run the C++ program.
+
+
+FA.in:
+
+3   // Number of states
+0 1 2   // Set of states
+
+2   // Number of alphabet symbols
+0 1   // Alphabet
+
+5   // Number of transitions
+0 0 0   // Transition: q0 -> q0 on 0
+0 1 1   // Transition: q0 -> q1 on 1
+1 0 1   // Transition: q1 -> q0 on 0
+1 1 2   // Transition: q1 -> q2 on 1
+2 0 2   // Transition: q2 -> q2 on 0
+
+0   // Initial state
+
+1   // Number of final states
+2   // Final state
